@@ -1,0 +1,22 @@
+.combo-box {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+}
+.combo-box-input {
+	width: 100%;
+	box-sizing: border-box;
+}
+.combo-box-list {
+	width: 100%;
+	box-sizing: border-box;
+	position: absolute;
+}
+.combo-box-list.hide {
+	display: none;
+}
+.combo-box-select {
+	width: 100%;
+	box-sizing: border-box;
+}

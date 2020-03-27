@@ -1,0 +1,38 @@
+.json-edit {
+	max-width: 800px;
+	border: 1px solid #eee;
+	font-family: monospace;
+}
+.json-edit .hide {
+	display: none;
+}
+
+.json-kids {
+	padding: 0 0 0 20px;
+}
+
+.json-name {
+	padding-right: 10px;
+}
+.json-val {
+}
+
+.json-line {
+	font-family: monospace;
+
+	.btn {
+		margin-left: 10px;
+		border: 0;
+		background: transparent;
+		padding: 0;
+		cursor: pointer;
+		color: #999;
+	}
+
+	.btn-hover { visibility: hidden; }
+	:hover .btn-hover { visibility: visible; }
+}
+
+.json-struct.wip .json-line {
+	&:hover .btn-hover { visibility: hidden; }
+}

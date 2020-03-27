@@ -1,0 +1,85 @@
+.date-picker {
+	position: relative;
+	width: 170px;
+}
+
+.date-picker__input {
+	padding: 6px 0;
+	border-bottom: 1px solid #e5e5e5;
+	background: white;
+
+	/*
+	[class^="fa-"]:not(.fa-stack),
+	[class^="glyphicon-"],
+	[class^="icon-"],
+	[class*=" fa-"]:not(.fa-stack),
+	[class*=" glyphicon-"],
+	[class*=" icon-"] {
+		font-size: 12px;
+		text-align: right;
+		width: 15px;
+		float: right;
+	}
+	*/
+}
+.date-picker__input-txt {
+	border: 0;
+	outline: none;
+	width: 140px;
+}
+.date-picker__input-icox {
+	cursor: pointer;
+	float: right;
+}
+
+.date-picker__panel {
+	position: absolute;
+	width: 100%;
+	background: #fff;
+	&.hide {
+		display: none;
+	}
+	&.static {
+		position: static;
+	}
+}
+
+.date-picker__calendar {
+	width: 100%;
+	font-family: monospace;
+	border: 1px solid #e5e5e5;
+	border-collapse: collapse;
+	padding: 0;
+	margin: 0;
+	td, th {
+		border: 0px solid #e5e5e5;
+		border-collapse: collapse;
+		padding: 2px 4px;
+		text-align: center;
+	}
+	th {
+		background: #ccc;
+	}
+	td.enabled {
+		cursor: pointer;
+	}
+	td.selected {
+		background: #51beb6;
+		color: #fff;
+	}
+}
+
+.date-picker__nav {
+	display: flex;
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+}
+.date-picker__nav-ico {
+	cursor: pointer;
+	padding: 5px;
+}
+.date-picker__nav-mnyr {
+	flex: 1 0 auto;
+	text-align: center;
+	padding: 5px;
+}

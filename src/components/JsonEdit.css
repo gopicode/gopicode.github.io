@@ -1,0 +1,33 @@
+.json-edit {
+}
+
+.json-object {
+	padding: 0 0 0 20px;
+}
+.json-object.is-hidden {
+	display: none;
+}
+
+.json-line {
+	font-family: monospace;
+}
+
+.json-key {
+	padding-right: 10px;
+}
+
+.json-btn-arrow,
+.json-btn-del,
+.json-btn-add {
+	visibility: hidden;
+}
+.json-line:hover .json-btn-arrow,
+.json-line:hover .json-btn-del,
+.json-line:hover .json-btn-add {
+	visibility: visible;
+}
+
+.json-btn-arrow.show,
+.json-line:hover .json-btn-arrow.show {
+	visibility: visible;
+}

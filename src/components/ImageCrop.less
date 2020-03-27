@@ -1,0 +1,129 @@
+.image-crop {
+	position: relative;
+	&--hide {
+		display: none;
+	}
+	&__img {
+		display: block;
+		/*
+		-khtml-user-select: none;
+		-o-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+
+		-webkit-user-drag: none;
+		-khtml-user-drag: none;
+		-moz-user-drag: none;
+		-o-user-drag: none;
+		user-drag: none;
+		*/
+	}
+	&__shim {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		cursor: crosshair;
+	}
+	&__area {
+		position: absolute;
+	}
+	&__img-inner {
+		position: absolute;
+	}
+	&__drag {
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		right: 10px;
+		bottom: 10px;
+		/*background-color: #1abc9c;*/
+		cursor: move;
+
+	}
+	&__vline, &__hline {
+		position: absolute;
+		background: #fff url('/ant.gif');
+		font-size: 0;
+	}
+	&__vline {
+		width: 1px;
+		height: 100%;
+	}
+	&__hline {
+		width: 100%;
+		height: 1px;
+	}
+	&__vline.right {
+		right: 0;
+	}
+	&__hline.bottom {
+		bottom: 0;
+	}
+	&__handle {
+		background-color: #aaa;
+		border: 1px solid #eee;
+		width: 7px;
+		height: 7px;
+		font-size: 1px;
+		position: absolute;
+	}
+	&__handle[data-direction="north"] {
+		left: 50%;
+		top: 0;
+		margin-left: -4px;
+		margin-top: -4px;
+		cursor: n-resize;
+	}
+	&__handle[data-direction="south"] {
+		left: 50%;
+		bottom: 0;
+		margin-left: -4px;
+		margin-bottom: -4px;
+		cursor: s-resize;
+	}
+	&__handle[data-direction="east"] {
+		right: 0;
+		top: 50%;
+		margin-right: -4px;
+		margin-top: -4px;
+		cursor: e-resize;
+	}
+	&__handle[data-direction="west"] {
+		left: 0;
+		top: 50%;
+		margin-left: -4px;
+		margin-top: -4px;
+		cursor: w-resize;
+	}
+	&__handle[data-direction="north-east"] {
+		right: 0;
+		top: 0;
+		margin-right: -4px;
+		margin-top: -4px;
+		cursor: ne-resize;
+	}
+	&__handle[data-direction="south-east"] {
+		right: 0;
+		bottom: 0;
+		margin-right: -4px;
+		margin-bottom: -4px;
+		cursor: se-resize;
+	}
+	&__handle[data-direction="north-west"] {
+		left: 0;
+		top: 0;
+		margin-left: -4px;
+		margin-top: -4px;
+		cursor: nw-resize;
+	}
+	&__handle[data-direction="south-west"] {
+		left: 0;
+		bottom: 0;
+		margin-left: -4px;
+		margin-bottom: -4px;
+		cursor: sw-resize;
+	}
+}
